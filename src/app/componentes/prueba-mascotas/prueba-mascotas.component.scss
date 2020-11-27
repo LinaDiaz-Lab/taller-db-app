@@ -1,0 +1,61 @@
+section { 
+    background-color: rgb(255, 255, 255); 
+    padding: 10px; 
+    margin: 20px; 
+    border: 2px solid rgb(4, 185, 89); 
+    padding: 30px ; 
+} 
+h1{ 
+    color: rgb(4, 185, 89); 
+    text-align: center; 
+    font-size: 50px; 
+} 
+h2{ 
+    color: rgb(7, 116, 58); 
+    text-align: center; 
+    font-size: 30px; 
+} 
+label{ 
+    padding: 20px; 
+    font-size: 20px; 
+    color: black; 
+} 
+input { 
+    padding: 0px 20px; 
+    font-size: 20px; 
+} 
+select{ 
+    padding: 0px 20px; 
+    font-size: 20px; 
+} 
+.pregunta { 
+    margin: 18px 0px; 
+} 
+.boton{ 
+    margin: 20px 20px; 
+} 
+button{ 
+    background-color: rgb(142, 245, 190); 
+    padding: 10px 30px; 
+    border: 2px solid rgb(4, 185, 89); 
+    color: rgb(4, 63, 31); 
+    font-size: 16px; 
+} 
+thead{ 
+    background-color: rgb(87, 211, 143); 
+    color: white; 
+ } 
+thead th{ 
+    padding: 10px 30px; 
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+} 
+tbody th{ 
+    padding: 10px 30px; 
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+} 
+.tabla { 
+    display: flex; 
+    justify-content: center; 
+}

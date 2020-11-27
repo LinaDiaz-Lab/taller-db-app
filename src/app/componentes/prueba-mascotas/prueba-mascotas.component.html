@@ -1,0 +1,46 @@
+<section> 
+    <div class="titulo"> 
+      <h1>Registro de Mascotas</h1> 
+    </div> 
+    <form> 
+      <div class="pregunta"> 
+        <label for='nombre'>Nombre</label> 
+        <input class="form-control" type="text" id="nombre" [(ngModel)]="nombreAnimal"> 
+      </div> 
+      <div class="pregunta"> 
+        <label for="especie">Especie</label> 
+        <select name="custom-select" id="especie"> 
+          <option selected value="">🐾</option> 
+          <option value="Perro">Perro 🐶</option> 
+          <option value="Gato">Gato 🐱</option> 
+          <option value="Conejo">Conejo 🐰</option> 
+          <option value="Hamster">Hamster 🐹</option> 
+          <option value="Pez">Pez 🐠</option> 
+        </select> 
+      </div> 
+      <div class="boton"> 
+        <button class="btn btn-primary" (click)="agregarAnimal()">Agregar</button> 
+      </div> 
+    </form> 
+    <h2> 
+      Listado de mascotas 
+    </h2> 
+    <ol> 
+      <li *ngFor="let animal of animales; index as i"> 
+        {{ animal }} 
+        <button class="btn btn-danger" (click)="removerAnimal(i)">Eliminar</button> 
+      </li> 
+    </ol> 
+    <div class="tabla"> 
+      <table> 
+        <thead> 
+          <tr> 
+            <th>#</th> 
+            <th>Nombre</th> 
+            <th>Especie</th> 
+          </tr> 
+        </thead> 
+        <tbody></tbody> 
+      </table> 
+    </div> 
+  </section> 
